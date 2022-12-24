@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "sans";
+    src: url("/fonts/sans.ttf");
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #0ea5d9;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+html {
+    text-align: right;
+    direction: rtl;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+    font-family: sans;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.main-pad {
+    padding: 8px 10%;
+}
+
+.emp-login .top-background {
+    height: 30vh;
+    background-color: var(--main-color);
+}
+
+.emp-login .inputs {
+    padding: 8px 10%;
+}
+
+.emp-login .inputs input {
+    background-color: #e9e9e7;
+}
+
+.emp-login .inputs a {
+    color: #9d9fa0;
+}
+
+.emp-login .inputs button {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.main-top {
+    padding: 8px 10%;
+    color: white;
+    position: relative;
+    padding-bottom: 34px;
+    background-color: var(--main-color);
+}
+
+.main-top .notif {
+    position: absolute;
+    top: 12px;
+    left: 10%;
+}
+
+.main-top .notif span {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.main-route .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.main-route .wrapper .item {
+    padding: 8px;
+    color: white;
+    border-radius: 12px;
+    position: relative;
+}
+
+.main-route .wrapper .item span {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.main-route .wrapper .item p {
+    margin-top: 24px;
+}
+
+.main-route .wrapper #payslip {
+    /*background-color: var(--main-color);*/
+    background-color: #ff6968;
+}
+
+.main-route .wrapper #timesheet {
+    /*background-color: #6b53de;*/
+    background-color: #7a53f9;
+}
+
+.main-route .wrapper #employees {
+    /*background-color: #055a4b;*/
+    background-color: #ff8f61;
+}
+
+.main-route .wrapper #reports {
+    /*background-color: #f4745b;*/
+    background-color: #2ac3ff;
+}
+
+.main-route .wrapper #logout {
+    /*background-color: #e60023;*/
+    background-color: #96da45;
+}
+
+.main-route .wrapper #access {
+    /*background-color: #e60023;*/
+    background-color: #5a65ff;
+}
+
+.notif-list .items .item {
+    overflow: hidden;
+    position: relative;
+    padding-right: 40px;
+    margin-bottom: 12px;
+    color: black;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 12px;
+}
+
+.notif-list .items .item img {
+    position: absolute;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.notif-list .items .item iconify-icon {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.notif-list .items .item .desc {
+    font-size: 12px;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: calc(100%);
+}
+
+.notif-list .items .item .date {
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form-select {
+    padding-right: 30px;
+}
+
+.form-check .form-check-input {
+    float: none;
+    margin-left: 0;
+}
+
+.project-report-view .items img {
+    max-width: 100%;
+    margin: 12px 0;
+}
+
+.project-inside-view {
+    position: relative;
+}
+
+.project-inside-view .persian-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.financial {
+    margin-top: 20px;
+}
+
+.financial .item {
+    position: relative;
+    margin-right: 60px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #f1f1f1;
+    color: black;
+}
+
+.financial .item .icon {
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.financial .item .desc {
+    font-size: 12px;
+}
+
+.loan-items {
+    margin-right: 30px !important;
+}
+
+.loan-items .icon {
+    top: 15px !important;
+    right: -40px !important;
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.notif-unread {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.auth-login {
+    width: 600px;
+    background: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 24px;
+}

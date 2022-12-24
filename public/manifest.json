@@ -1,0 +1,17 @@
+{
+    "name": "عمارت شمس",
+    "short_name": "عمارت شمس",
+    "start_url": "/index.php",
+    "background_color": "#ffffff",
+    "description": "نرم افزار عمارت شمس",
+    "display": "fullscreen",
+    "theme_color": "#0ea5d9",
+    "icons": [
+        {
+            "src": "/images/logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
